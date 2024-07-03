@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".TimeSetup" />
-
+        <activity android:name=".CounterActivity"></activity>
     </application>
 
 </manifest>

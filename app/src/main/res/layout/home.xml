@@ -26,4 +26,15 @@
         android:layout_marginBottom="16dp"
         android:contentDescription="Add new schedule"
         android:src="@drawable/ic_add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:src="@android:drawable/ic_media_play"
+        android:tint="@android:color/white"
+         />
 </RelativeLayout>

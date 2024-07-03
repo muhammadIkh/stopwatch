@@ -29,11 +29,18 @@ class Home : AppCompatActivity(), ScheduleAdapter.OnItemClickListener {
         scheduleAdapter = ScheduleAdapter(scheduleList, this)
         binding.recyclerView.adapter = scheduleAdapter
 
-        // Set up FAB
+        // Set up Add FAB
         val fabAdd: FloatingActionButton = findViewById(R.id.fab)
         fabAdd.setOnClickListener {
             val intent = Intent(this, TimeSetup::class.java)
             startActivityForResult(intent, REQUEST_CODE_TIME_SETUP)
+        }
+
+        // Set up Start FAB
+        val startButton: FloatingActionButton = findViewById(R.id.startButton)
+        startButton.setOnClickListener {
+            val intent = Intent(this, CounterActivity::class.java)
+            startActivity(intent)
         }
 
         // Display set time in RecyclerView
